@@ -7,6 +7,7 @@
 - Jackson
 - Lombok
 - Maven
+- Postman
 - AWS S3
 - AWS lambda
 - AWS API Gateway
