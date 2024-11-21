@@ -42,7 +42,7 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Str
             String urlDataJson =  objectMapper.writeValueAsString(urlData);
 
             PutObjectRequest request = PutObjectRequest.builder()
-                    .bucket("mw-url-shortener-storage")
+                    .bucket("bucket-url-shortener-storage")
                     .key(shortUrlCode + ".json")
                     .build();
 
