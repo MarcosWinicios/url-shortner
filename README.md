@@ -7,6 +7,7 @@
 - Jackson
 - Lombok
 - Maven
+- Postman
 - AWS S3
 - AWS lambda
 - AWS API Gateway
@@ -18,11 +19,12 @@
 https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/{urlCode}
 ```
 
-**urlCode:** Código referente a URL original gerado e a partir do seguinte endpoint:
+**urlCode:** Código referente a URL original gerado a partir da execução do seguinte endpoint(Necessário utilizar algum client http como o [Postman](https://www.postman.com/):
 
 **Request**:
+
+**POST** ``https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/create``
 ```
-  POST https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/create 
   {
     "originalUrl":"https://github.com/MarcosWinicios",
     "expirationTime": "1732270940" //timestamp in seconds
