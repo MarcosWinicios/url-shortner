@@ -35,7 +35,9 @@ Para testar a URL encurtada execute a seguinte URL no navegador, onde urlCode é
 ```
 https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/{urlCode}
 ```
+## Diagram
 
+![diagram](docs/diagram.png)
 
 ## Projetos relacionados
 - [Redirecionador de URLs](https://github.com/url-shortener-project/url-shortener-redirector)
