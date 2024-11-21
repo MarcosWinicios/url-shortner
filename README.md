@@ -1,25 +1,18 @@
-# Redirecionador de URLs
+# Gerador de URLs
 
-### Este projeto é um dos serviços que compõem o encutador de URLs. Este é o serviço que faz o redirecionamento das URLs encurtadas para as URLs originais.
+#### Este projeto é um dos serviços que compõem o encutador de URLs. Este é o serviço que recebe a armazena a URL original relacionando-a a uma código curto aleatório.
 
 ## Tecnologias Utilizadas
 - Java 17
 - Jackson
 - Lombok
 - Maven
-- Postman
 - AWS S3
 - AWS lambda
 - AWS API Gateway
 
 ## Como utilizar
-### Execute a seguinte URL no navegador
-
-```
-https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/{urlCode}
-```
-
-**urlCode:** Código referente a URL original gerado a partir da execução do seguinte endpoint(Necessário utilizar algum client http como o [Postman](https://www.postman.com/):
+### Execute a seguinte URL em um cliente http, como o [Postman](https://www.postman.com/):
 
 **Request**:
 
@@ -32,11 +25,16 @@ https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/{urlCode}
 ```
 **Response**:
 ```
-{
-    "code": "554bec03"
-}
+  {
+      "code": "554bec03"
+  }
+```
+Para testar a URL encurtada execute a seguinte URL no navegador, onde urlCode é o valor retornado no campo ``code`` da requisição anterior:
+
+```
+https://6dsal8smxc.execute-api.us-east-2.amazonaws.com/{urlCode}
 ```
 
+
 ## Projetos relacionados
-- [Gerador de URLs](https://github.com/url-shortener-project/url-shortener-generator)
-  
+- [Redirecionador de URLs](https://github.com/url-shortener-project/url-shortener-redirector)
